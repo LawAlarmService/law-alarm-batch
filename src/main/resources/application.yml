@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:mysql://61.101.130.10:3306/law_alarm_service_db
+    username: beom
+    password: beom1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
