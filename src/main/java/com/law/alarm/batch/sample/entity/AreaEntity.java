@@ -1,9 +1,11 @@
 package com.law.alarm.batch.sample.entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
 
+@Getter
 @Entity
-@Table(name = "area"/*, schema = "law_alarm_service_db"*/)
+@Table(name = "area")
 public class AreaEntity {
 
     @Id
@@ -20,24 +22,18 @@ public class AreaEntity {
     @Column(name = "area_district")
     private String areaDistrict;
 
-    public Long getId() {
-        return id;
-    }
-
-    public String getAreaCd() {
-        return areaCd;
-    }
-
-    public String getAreaCity() {
-        return areaCity;
-    }
-
-    public String getAreaDistrict() {
-        return areaDistrict;
-    }
-
     public String getData() {
         return id + " / " + areaCd + " / " + areaCity + " / " + areaDistrict;
+    }
+
+    @Override
+    public String toString() {
+        return "AreaEntity{" +
+                "id=" + id +
+                ", areaCd='" + areaCd + '\'' +
+                ", areaCity='" + areaCity + '\'' +
+                ", areaDistrict='" + areaDistrict + '\'' +
+                '}';
     }
 
 }

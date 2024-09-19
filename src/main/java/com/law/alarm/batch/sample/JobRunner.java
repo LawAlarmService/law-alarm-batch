@@ -15,8 +15,12 @@ public class JobRunner implements CommandLineRunner {
     @Autowired
     private JobLauncher jobLauncher;
 
+//    @Autowired
+//    @Qualifier("sampleJob")
+//    private Job job;
+
     @Autowired
-    @Qualifier("sampleJob")
+    @Qualifier("zoneInitJob")
     private Job job;
 
     @Override

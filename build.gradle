@@ -33,6 +33,9 @@ dependencies {
 	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.1'
 
 	implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+
+	implementation 'javax.xml.bind:jaxb-api'
+	implementation 'com.sun.xml.bind:jaxb-impl'
 }
 
 configurations {

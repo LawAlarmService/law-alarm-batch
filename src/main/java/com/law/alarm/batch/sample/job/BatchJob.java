@@ -1,4 +1,4 @@
-package com.law.alarm.batch.sample;
+package com.law.alarm.batch.sample.job;
 
 import com.law.alarm.batch.sample.entity.AreaEntity;
 import jakarta.persistence.EntityManagerFactory;
