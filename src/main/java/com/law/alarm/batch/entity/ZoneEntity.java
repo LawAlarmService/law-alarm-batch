@@ -1,4 +1,4 @@
-package com.law.alarm.batch.sample.entity;
+package com.law.alarm.batch.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
