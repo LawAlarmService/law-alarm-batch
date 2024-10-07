@@ -1,4 +1,4 @@
-package com.law.alarm.batch.sample.entity;
+package com.law.alarm.batch.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -21,10 +21,6 @@ public class AreaEntity {
 
     @Column(name = "area_district")
     private String areaDistrict;
-
-    public String getData() {
-        return id + " / " + areaCd + " / " + areaCity + " / " + areaDistrict;
-    }
 
     @Override
     public String toString() {

@@ -1,6 +1,8 @@
-package com.law.alarm.batch.sample.dto.apiResponse;
+package com.law.alarm.batch.dto.apiResponse;
 
-import jakarta.xml.bind.annotation.*;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlType;
 
 import java.util.List;
 
@@ -28,7 +30,7 @@ public class SearchZone {
         this.zoneCdList = zoneCdList;
     }
 
-    @XmlType(propOrder = { "UCODE", "UNAME", "LAW_CD", "LAW_NM" })
+    @XmlType(propOrder = {"UCODE", "UNAME", "LAW_CD", "LAW_NM"})
     public static class ZoneCd {
         private String UCODE;
         private String UNAME;
